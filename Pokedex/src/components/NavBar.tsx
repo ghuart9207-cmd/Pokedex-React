@@ -15,7 +15,11 @@ function NavBar({pokemonList, setPokemonName}:NavBarProps ) {
           <ul key={pokemon.name}>
             <div className='nbchoix'>
               <p>{pokemon.name} </p>
-              <button className='button' onClick={() => setPokemonName(pokemon.name)}>choose</button>
+              <button className='button' onClick={() => {
+                if (pokemon.name === "pikachu") {
+                    alert("pika pikachu !!!")
+                }
+                setPokemonName(pokemon.name)}}>choose</button>
             </div>
           </ul>
         ))}

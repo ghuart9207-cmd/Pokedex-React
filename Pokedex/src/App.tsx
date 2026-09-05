@@ -1,6 +1,7 @@
 import './App.css'
 import './components/Pokecard.css'
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 import PokemonCard from './components/PokemonCard';
 import NavBar from './components/NavBar';
@@ -47,6 +48,13 @@ function App() {
   }
 
   console.log(pokemonName);
+
+  useEffect(
+    () => {
+      alert("hello pokemon trainer :)");
+    },
+    []
+  );
 
   return (
   <div>
