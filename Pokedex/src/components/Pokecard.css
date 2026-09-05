@@ -1,0 +1,58 @@
+.image {
+    margin-bottom: 10px;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card {
+    margin-right: auto;
+    margin-left: auto;
+    width: 230px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+}
+
+.choix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.nom {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.button {
+    color: black;
+}
+
+.nbchoix {
+    border-radius: 10px;
+    border-color: white;
+    background-color: rgb(2, 26, 87);
+    padding: 7px;
+    border: 2px solid rgb(249, 249, 249);
+}
+
+.noimage {
+    margin-bottom: 10px;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}

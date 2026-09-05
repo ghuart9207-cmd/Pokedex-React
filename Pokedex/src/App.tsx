@@ -1,4 +1,5 @@
 import './App.css'
+import './components/Pokecard.css'
 import { useState } from 'react';
 
 import PokemonCard from './components/PokemonCard';
@@ -8,24 +9,29 @@ const pokemonList = [
     name: "bulbasaur",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    color : "lightgreen",
   },
   {
     name: "charmander",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+    color : "lightsalmon",
   },
   {
     name: "squirtle",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+    color : "lightblue",
   },
   {
     name: "pikachu",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    color : "yellow",
   },
   {
     name: "mew",
+    color : "violet",
   },
 ];
 
@@ -43,12 +49,14 @@ function App() {
 
   return (
   <div>
-    <nav>
+    <nav className='choix'>
       {pokemonList.map((pokemon) => (
-          <li key={pokemon.name}>
-            <input type="text" defaultValue={pokemon.name} />
-            <button onClick={() => setPokemonName(pokemon.name)}>choise</button>
-          </li>
+          <ul key={pokemon.name}>
+            <div className='nbchoix'>
+              <p>{pokemon.name} </p>
+              <button className='button' onClick={() => setPokemonName(pokemon.name)}>choise</button>
+            </div>
+          </ul>
         ))}
     </nav>
     <PokemonCard pokemon={pokemon} />
